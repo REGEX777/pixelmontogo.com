@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Pixelmon To Go - Pixelmon Reforged Minecraft Server.</title>
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Odibee+Sans|Oswald&display=swap" rel="stylesheet">
+    <link href="assets/fonts/geometria/style.css" rel="stylesheet">
+    <link href="assets/fonts/akrobat/akrobat.css" rel="stylesheet">
+    <link href="assets/css/animate.minc4ca.css?1" rel="stylesheet">
+    <link href="assets/css/reset.css" rel="stylesheet">
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/owl/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/css/style-less.css" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="https://www.pixelmontogo.com/favicon.ico">
+    <script charset="UTF-8" src="https://cdn.sendpulse.com/js/push/bd74d0bd5641c62280c2b798fdb3fd4f_1.js" async></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3J0V88NTMF"></script>
+
+   <script src="js/redirection-mobile.js"></script>
+			<script>
+				SA.redirection_mobile ({
+				tablet_redirection : "true",
+		mobile_url : "discord.gg/pwbB6W739r",
+		mobile_prefix : "https"
+	});
+			</script>
+
+
+    <div id="phone_hide">
+        <script>
+            window.addEventListener('DOMContentLoaded', (event) => {
+                const playerCount = document.getElementById('total-player-count');
+                fetch('https://api.mcsrvstat.us/2/pixelmontogo.com').then(res => res.json()).then(res => {
+                    if (res && res.players && res.players.online) {
+                        playerCount.textContent = res.players.online;
+                    } else {
+                        playerCount.textContent = "??";
+                    }
+                }).catch(e => {
+                    playerCount.textContent = "??";
+                });
+
+                const downloadLink = document.getElementById('download-pixelmon');
+                const platform = document.getElementById('platform');
+                if (navigator.userAgent.indexOf('Mac OS X') !== -1) {
+                    downloadLink.href = "https://cdn.pixelmontogo.com/launcher/PixelmonToGoLauncher-mac.dmg";
+                    platform.textContent = "(MAC)";
+                } else {
+                    downloadLink.href = "https://cdn.pixelmontogo.com/launcher/Pixelmon%20To%20Go%20Launcher%20Setup.exe";
+                    platform.textContent = "(WINDOWS)";
+                }
+            });
+
+            function downloadLink() {
+
+            }
+        </script>
+		
+        <div id="wrapper">
+            <header class="index">
+                <div id="wrapper">
+                    <header class="index">
+                        <div id="header" class="clear">
+                            <i class="top-light"></i>
+                            <i class="bottom-sep"></i>
+                            <i class="bg-head-1"></i>
+                            <div class="topline">
+                                <div class="container">
+                                    <div class="topline-wrap">
+                                        <a href="index.html" class="logo-wrap">
+                                            <div class="logo"><img src="media/logotype.png" alt=""></div>
+                                            <p class="desc"><br><br><span>Pixelmon</span></p>
+                                        </a>
+                                        <div class="menu-login">
+                                            <ul class="main-menu">
+                                                <li><a href="index.html">Home</a></li>
+                                                <li class="shop-v"><a href="https://store.pixelmontogo.com/">Store</a></li>
+                                                <li><a href="https://store.pixelmontogo.com/category/ranks-1">Premium</a></li>
+                                                <!--<li><a href="Virtual_Reality.php" >Virtual Reality</a></li>-->
+                                                <li><a href="#anchor-point">How to play</a></li>
+                                                <li><a target="_blank" href="https://twitter.com/PixelmonToGo">Twitter</a></li>
+												 <li id="Discordtop" ><a href="https://discord.gg/2TdCupu">discord<i id="Discord" class="youtube"></i></a></li>
+                                                <li id="Youtubetop" ><a target="_blank" href="https://www.youtube.com/channel/UCBj4JgPwTWnmNW6S7ffytQQ?view_as=subscriber">Youtube<i class="youtube"></i></a></li>
+                                            </ul>
+                                            <!--<a class="login"><img src="assets/images/login.svg" alt=""></a>-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <section class="carousel">
+                            <div class="carousel-items">
+                                <div id="carousel-item-1" class="">
+                                    <h1 class="carousel-title">LAUNCHER</h1>
+                                    <div id="easy-install">
+                                        <h3 class="carousel-text-small">EASY<br></h3>
+                                        <h3 class="carousel-text">INSTALL</h3>
+                                    </div>
+                                    <div id="multiplayer-open-world">
+                                        <h3 class="carousel-text">MULTIPLAYER<br></h3>
+                                        <h3 class="carousel-text-small">OPEN WORLD</h3>
+                                    </div>
+                                    <div id="voice-chat-coming-soon">
+                                        <h3 class="carousel-text-small">NEW UPDATES<br></h3>
+                                        <h3 class="carousel-text">GEN 8.3</h3>
+                                    </div>
+
+                                    <div class="carousel-buttons">
+                                        <a class="carousel-button-1">
+                                            <div style="height: 8px;"></div>
+                                        </a>
+                                        <a class="carousel-button-2">
+                                            <div></div>
+                                        </a>
+                                        <a class="carousel-button-3">
+                                            <div></div>
+                                        </a>
+                                        <a class="carousel-button-4">
+                                            <div></div>
+                                        </a>
+                                    </div>
+
+                                    <a id="download-pixelmon">
+                                        <img alt="download launcher" src="media/download-ico.png">
+                                        <h3>DOWNLOAD PIXELMON <span id="platform"></span></h3>
+                                    </a>
+
+                                    <!--<div id="launcher-pokemon">
+                                    <img alt="pokemon" class="laucher_icon" src="media/man-head-4.png">
+                                </div>-->
+                                </div>
+                                <div id="carousel-item-2" class="hidden">
+                                    <h1 class="carousel-title">TOURNAMENTS</h1>
+
+                                    <div class="carousel-buttons">
+                                        <a class="carousel-button-1">
+                                            <div></div>
+                                        </a>
+                                        <a class="carousel-button-2">
+                                            <div style="height: 8px;"></div>
+                                        </a>
+                                        <a class="carousel-button-3">
+                                            <div></div>
+                                        </a>
+                                        <a class="carousel-button-4">
+                                            <div></div>
+                                        </a>
+                                    </div>
+
+                                    <a href="https://www.youtube.com/embed/92lLf1NiH4k" id="how-does-it-work" style="background: #1b1b1b;box-shadow: 0 10px 30px #a2a2a2;color: #ffffff;">
+                                        <img alt="how does it work?" height="101" src="media/but-icon-head-2.png" width="105">
+                                        <h3>HOW TO PLAY</h3>
+                                    </a>
+
+                                    <a href="https://discord.gg/zUu5CPGEHz" id="standings">
+                                        <h3>EVENTS</h3>
+                                    </a>
+
+                                    <img alt="pokemon trainer" id="tournaments-pokemon-trainer" src="media/man-head-2.png">
+                                </div>
+                                <div id="carousel-item-3" class="hidden">
+                                    <h1 class="carousel-title">BUGS OR ISSUES</h1>
+
+                                    <div class="carousel-buttons">
+                                        <a class="carousel-button-1">
+                                            <div></div>
+                                        </a>
+                                        <a class="carousel-button-2">
+                                            <div></div>
+                                        </a>
+                                        <a class="carousel-button-3">
+                                            <div style="height: 8px;"></div>
+                                        </a>
+                                        <a class="carousel-button-4">
+                                            <div></div>
+                                        </a>
+                                    </div>
+
+                                    <a href="https://pixelmonmod.com/wiki/" id="apply-for-staff" style="background: #1b1b1b;box-shadow: 0 10px 30px #a2a2a2;color: #ffffff;">
+                                        <img alt="apply for staff" height="110" src="media/but-icon-head-3.png" width="110">
+                                        <h3>VISIT THE WIKI</h3>
+                                    </a>
+
+                                    <a href="https://pixelmonmod.com/tracker.php?sid=b250ff1e5608eb156d0b84b3fbb856ad" id="see-all-open-positions">
+                                        <h3>REPORT BUG</h3>
+                                    </a>
+
+                                    <img alt="pokemon trainer" id="universal-amazing-pokemon-trainer" src="media/man-head-3.png">
+                                </div>
+                                <div id="carousel-item-4" class="hidden">
+                                    <h1 class="carousel-title">IN-GAME STORE</h1>
+
+                                    <div class="carousel-buttons">
+                                        <a class="carousel-button-1">
+                                            <div></div>
+                                        </a>
+                                        <a class="carousel-button-2">
+                                            <div></div>
+                                        </a>
+                                        <a class="carousel-button-3">
+                                            <div></div>
+                                        </a>
+                                        <a class="carousel-button-4">
+                                            <div style="height: 8px;"></div>
+                                        </a>
+                                    </div>
+
+                                    <a href="https://store.pixelmontogo.com/" id="visit-our-store" style="background: #1b1b1b;box-shadow: 0 10px 30px #a2a2a2;color: #ffffff;">
+                                        <img alt="visit our store" height="110" src="media/but-icon-head-4.png" width="110">
+                                        <h3>VISIT OUR STORE</h3>
+                                    </a>
+
+                                    <a href="https://store.pixelmontogo.com/terms/checkout" id="payment-methods">
+                                        <h3>TERMS OF SERVICE</h3>
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+
+                        <img alt="bottom seperator" class="bot-sep" src="media/bottom-sep2-white.svg" style="width: 100%;position: relative;top: -90px;z-index: 1000;margin-bottom: -6em;    height: 100px;">
+                    </header>
+
+                    <section class="choose-server">
+                        <div id="choose-server-header">
+                            <h2>Choose</h2>
+                            <h1>Your Server</h1>
+                            <h5>Total Online: <span id="total-player-count">----</span></h5>
+                        </div>
+
+                        <div id="choose-server-content">
+                            <div id="server-1">
+                                <div id="america">
+                                    <img alt="america" src="media/amerika.png" width="50">
+                                    <h3>NORTH-AMERICA</h3>
+                                </div>
+                            </div>
+
+                            <div id="server-2">
+                                <div id="europe">
+                                    <img alt="europe" src="media/europa.png" width="50">
+                                    <h3>EUROPE</h3>
+                                </div>
+                            </div>
+
+                            <img alt="glumanda" id="choose-server-glumanda" src="media/dog-hide.png">
+
+                            <div id="choose-server-players">
+                                <div id="choose-server-players-na">
+                                    <!--<h5>Players Online</h5>
+                            <h4>602 out of 1000</h4>-->
+                                </div>
+
+                                <div id="choose-server-players-eu">
+                                    <!--<h5>Players Online</h5>
+                            <h4>824 out of 1000</h4>-->
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="fag-video-area section_100">
+                      <a id="anchor-point"></a>
+                       <div class="top-layer"></div>
+                       <div class="bottom-layer"></div>
+                       <div class="container">
+                          <div class="row">
+                             <div class="col-12">
+                                <div class="fag-video-inn">
+                                  <iframe width="560" height="315" src="https://www.youtube.com/embed/92lLf1NiH4k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" style="width: 90%;height: 412px;"></iframe>
+                                   </a>
+                                </div>
+                                <img alt="pokemon logo" src="media\play.png" class="poke_logo" style="margin: auto;position: relative;z-index: 7;margin-top: -46%;left: -48%;width: 700px;z-index: 1000;">
+                                <a href="https://cdn.pixelmontogo.com/launcher/Pixelmon%20To%20Go%20Launcher%20Setup.exe">
+                                <img alt="pokemon logo" src="media\playbutton.png" class="poke_logo1"></a>
+                             </div>
+                          </div>
+                       </div>
+                    </section>
+                    </section>
+                    <!-------------------------------------- JAVASCRIPT -------------------------------------------------->
+                    <script src="js/carousel.js"></script>
+                    <!-- <script src="js/installation-guide.js"></script> -->
+                    <script src="js/preload-images.js"></script>
+                </div>
+
+
+
+
+
+
+
+</body>
+
+</html>
