@@ -1,300 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Pixelmon To Go - Pixelmon Reforged Minecraft Server.</title>
-    <link href="css/style.css" type="text/css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Odibee+Sans|Oswald&display=swap" rel="stylesheet">
-    <link href="assets/fonts/geometria/style.css" rel="stylesheet">
-    <link href="assets/fonts/akrobat/akrobat.css" rel="stylesheet">
-    <link href="assets/css/animate.minc4ca.css?1" rel="stylesheet">
-    <link href="assets/css/reset.css" rel="stylesheet">
-    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/owl/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="assets/css/style-less.css" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixelmon To Go</title>
+    <link rel="stylesheet" href="css/style.css" >
+    <link
+    rel="icon"
+    href="media/logo-small1.png"
+    type="image/gif"
+    sizes="16x16"
+  />
+  <meta
+    name="keywords"
+    content="Pixelmon, PixelmonToGo, Pokimon, Minecraft, Client, Mods, Game, Launcher, Multiplayer, Online, Single, Server,"
+  />
+  <meta
+    name="description"
+    content="Pixelmon to go is an open world Minecraft Pokemon game with a easy installable launcher. It has some extra features, such as VoiceChat + Dancing Emotes + Costumes and improved game performance."
+  />
+</head>
+<body>  
 
-    <link rel="icon" type="image/png" href="https://www.pixelmontogo.com/favicon.ico">
-    <script charset="UTF-8" src="https://cdn.sendpulse.com/js/push/bd74d0bd5641c62280c2b798fdb3fd4f_1.js" async></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-3J0V88NTMF"></script>
-
-   <script src="js/redirection-mobile.js"></script>
-			<script>
-				SA.redirection_mobile ({
-				tablet_redirection : "true",
-		mobile_url : "discord.gg/pwbB6W739r",
-		mobile_prefix : "https"
-	});
-			</script>
-
-
-    <div id="phone_hide">
-        <script>
-            window.addEventListener('DOMContentLoaded', (event) => {
-                const playerCount = document.getElementById('total-player-count');
-                fetch('https://api.mcsrvstat.us/2/pixelmontogo.com').then(res => res.json()).then(res => {
-                    if (res && res.players && res.players.online) {
-                        playerCount.textContent = res.players.online;
-                    } else {
-                        playerCount.textContent = "??";
-                    }
-                }).catch(e => {
-                    playerCount.textContent = "??";
-                });
-
-                const downloadLink = document.getElementById('download-pixelmon');
-                const platform = document.getElementById('platform');
-                if (navigator.userAgent.indexOf('Mac OS X') !== -1) {
-                    downloadLink.href = "https://cdn.pixelmontogo.com/launcher/PixelmonToGoLauncher-mac.dmg";
-                    platform.textContent = "(MAC)";
-                } else {
-                    downloadLink.href = "https://cdn.pixelmontogo.com/launcher/Pixelmon%20To%20Go%20Launcher%20Setup.exe";
-                    platform.textContent = "(WINDOWS)";
-                }
-            });
-
-            function downloadLink() {
-
-            }
-        </script>
-		
-        <div id="wrapper">
-            <header class="index">
-                <div id="wrapper">
-                    <header class="index">
-                        <div id="header" class="clear">
-                            <i class="top-light"></i>
-                            <i class="bottom-sep"></i>
-                            <i class="bg-head-1"></i>
-                            <div class="topline">
-                                <div class="container">
-                                    <div class="topline-wrap">
-                                        <a href="index.html" class="logo-wrap">
-                                            <div class="logo"><img src="media/logotype.png" alt=""></div>
-                                            <p class="desc"><br><br><span>Pixelmon</span></p>
-                                        </a>
-                                        <div class="menu-login">
-                                            <ul class="main-menu">
-                                                <li><a href="index.html">Home</a></li>
-                                                <li class="shop-v"><a href="https://store.pixelmontogo.com/">Store</a></li>
-                                                <li><a href="https://store.pixelmontogo.com/category/ranks-1">Premium</a></li>
-                                                <!--<li><a href="Virtual_Reality.php" >Virtual Reality</a></li>-->
-                                                <li><a href="#anchor-point">How to play</a></li>
-                                                <li><a target="_blank" href="https://twitter.com/PixelmonToGo">Twitter</a></li>
-												 <li id="Discordtop" ><a href="https://discord.gg/2TdCupu">discord<i id="Discord" class="youtube"></i></a></li>
-                                                <li id="Youtubetop" ><a target="_blank" href="https://www.youtube.com/channel/UCBj4JgPwTWnmNW6S7ffytQQ?view_as=subscriber">Youtube<i class="youtube"></i></a></li>
-                                            </ul>
-                                            <!--<a class="login"><img src="assets/images/login.svg" alt=""></a>-->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <section class="carousel">
-                            <div class="carousel-items">
-                                <div id="carousel-item-1" class="">
-                                    <h1 class="carousel-title">LAUNCHER</h1>
-                                    <div id="easy-install">
-                                        <h3 class="carousel-text-small">EASY<br></h3>
-                                        <h3 class="carousel-text">INSTALL</h3>
-                                    </div>
-                                    <div id="multiplayer-open-world">
-                                        <h3 class="carousel-text">MULTIPLAYER<br></h3>
-                                        <h3 class="carousel-text-small">OPEN WORLD</h3>
-                                    </div>
-                                    <div id="voice-chat-coming-soon">
-                                        <h3 class="carousel-text-small">NEW UPDATES<br></h3>
-                                        <h3 class="carousel-text">GEN 8.3</h3>
-                                    </div>
-
-                                    <div class="carousel-buttons">
-                                        <a class="carousel-button-1">
-                                            <div style="height: 8px;"></div>
-                                        </a>
-                                        <a class="carousel-button-2">
-                                            <div></div>
-                                        </a>
-                                        <a class="carousel-button-3">
-                                            <div></div>
-                                        </a>
-                                        <a class="carousel-button-4">
-                                            <div></div>
-                                        </a>
-                                    </div>
-
-                                    <a id="download-pixelmon">
-                                        <img alt="download launcher" src="media/download-ico.png">
-                                        <h3>DOWNLOAD PIXELMON <span id="platform"></span></h3>
-                                    </a>
-
-                                    <!--<div id="launcher-pokemon">
-                                    <img alt="pokemon" class="laucher_icon" src="media/man-head-4.png">
-                                </div>-->
-                                </div>
-                                <div id="carousel-item-2" class="hidden">
-                                    <h1 class="carousel-title">TOURNAMENTS</h1>
-
-                                    <div class="carousel-buttons">
-                                        <a class="carousel-button-1">
-                                            <div></div>
-                                        </a>
-                                        <a class="carousel-button-2">
-                                            <div style="height: 8px;"></div>
-                                        </a>
-                                        <a class="carousel-button-3">
-                                            <div></div>
-                                        </a>
-                                        <a class="carousel-button-4">
-                                            <div></div>
-                                        </a>
-                                    </div>
-
-                                    <a href="https://www.youtube.com/embed/92lLf1NiH4k" id="how-does-it-work" style="background: #1b1b1b;box-shadow: 0 10px 30px #a2a2a2;color: #ffffff;">
-                                        <img alt="how does it work?" height="101" src="media/but-icon-head-2.png" width="105">
-                                        <h3>HOW TO PLAY</h3>
-                                    </a>
-
-                                    <a href="https://discord.gg/zUu5CPGEHz" id="standings">
-                                        <h3>EVENTS</h3>
-                                    </a>
-
-                                    <img alt="pokemon trainer" id="tournaments-pokemon-trainer" src="media/man-head-2.png">
-                                </div>
-                                <div id="carousel-item-3" class="hidden">
-                                    <h1 class="carousel-title">BUGS OR ISSUES</h1>
-
-                                    <div class="carousel-buttons">
-                                        <a class="carousel-button-1">
-                                            <div></div>
-                                        </a>
-                                        <a class="carousel-button-2">
-                                            <div></div>
-                                        </a>
-                                        <a class="carousel-button-3">
-                                            <div style="height: 8px;"></div>
-                                        </a>
-                                        <a class="carousel-button-4">
-                                            <div></div>
-                                        </a>
-                                    </div>
-
-                                    <a href="https://pixelmonmod.com/wiki/" id="apply-for-staff" style="background: #1b1b1b;box-shadow: 0 10px 30px #a2a2a2;color: #ffffff;">
-                                        <img alt="apply for staff" height="110" src="media/but-icon-head-3.png" width="110">
-                                        <h3>VISIT THE WIKI</h3>
-                                    </a>
-
-                                    <a href="https://pixelmonmod.com/tracker.php?sid=b250ff1e5608eb156d0b84b3fbb856ad" id="see-all-open-positions">
-                                        <h3>REPORT BUG</h3>
-                                    </a>
-
-                                    <img alt="pokemon trainer" id="universal-amazing-pokemon-trainer" src="media/man-head-3.png">
-                                </div>
-                                <div id="carousel-item-4" class="hidden">
-                                    <h1 class="carousel-title">IN-GAME STORE</h1>
-
-                                    <div class="carousel-buttons">
-                                        <a class="carousel-button-1">
-                                            <div></div>
-                                        </a>
-                                        <a class="carousel-button-2">
-                                            <div></div>
-                                        </a>
-                                        <a class="carousel-button-3">
-                                            <div></div>
-                                        </a>
-                                        <a class="carousel-button-4">
-                                            <div style="height: 8px;"></div>
-                                        </a>
-                                    </div>
-
-                                    <a href="https://store.pixelmontogo.com/" id="visit-our-store" style="background: #1b1b1b;box-shadow: 0 10px 30px #a2a2a2;color: #ffffff;">
-                                        <img alt="visit our store" height="110" src="media/but-icon-head-4.png" width="110">
-                                        <h3>VISIT OUR STORE</h3>
-                                    </a>
-
-                                    <a href="https://store.pixelmontogo.com/terms/checkout" id="payment-methods">
-                                        <h3>TERMS OF SERVICE</h3>
-                                    </a>
-                                </div>
-                            </div>
-                        </section>
-
-                        <img alt="bottom seperator" class="bot-sep" src="media/bottom-sep2-white.svg" style="width: 100%;position: relative;top: -90px;z-index: 1000;margin-bottom: -6em;    height: 100px;">
-                    </header>
-
-                    <section class="choose-server">
-                        <div id="choose-server-header">
-                            <h2>Choose</h2>
-                            <h1>Your Server</h1>
-                            <h5>Total Online: <span id="total-player-count">----</span></h5>
-                        </div>
-
-                        <div id="choose-server-content">
-                            <div id="server-1">
-                                <div id="america">
-                                    <img alt="america" src="media/amerika.png" width="50">
-                                    <h3>NORTH-AMERICA</h3>
-                                </div>
-                            </div>
-
-                            <div id="server-2">
-                                <div id="europe">
-                                    <img alt="europe" src="media/europa.png" width="50">
-                                    <h3>EUROPE</h3>
-                                </div>
-                            </div>
-
-                            <img alt="glumanda" id="choose-server-glumanda" src="media/dog-hide.png">
-
-                            <div id="choose-server-players">
-                                <div id="choose-server-players-na">
-                                    <!--<h5>Players Online</h5>
-                            <h4>602 out of 1000</h4>-->
-                                </div>
-
-                                <div id="choose-server-players-eu">
-                                    <!--<h5>Players Online</h5>
-                            <h4>824 out of 1000</h4>-->
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="fag-video-area section_100">
-                      <a id="anchor-point"></a>
-                       <div class="top-layer"></div>
-                       <div class="bottom-layer"></div>
-                       <div class="container">
-                          <div class="row">
-                             <div class="col-12">
-                                <div class="fag-video-inn">
-                                  <iframe width="560" height="315" src="https://www.youtube.com/embed/92lLf1NiH4k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" style="width: 90%;height: 412px;"></iframe>
-                                   </a>
-                                </div>
-                                <img alt="pokemon logo" src="media\play.png" class="poke_logo" style="margin: auto;position: relative;z-index: 7;margin-top: -46%;left: -48%;width: 700px;z-index: 1000;">
-                                <a href="https://cdn.pixelmontogo.com/launcher/Pixelmon%20To%20Go%20Launcher%20Setup.exe">
-                                <img alt="pokemon logo" src="media\playbutton.png" class="poke_logo1"></a>
-                             </div>
-                          </div>
-                       </div>
-                    </section>
-                    </section>
-                    <!-------------------------------------- JAVASCRIPT -------------------------------------------------->
-                    <script src="js/carousel.js"></script>
-                    <!-- <script src="js/installation-guide.js"></script> -->
-                    <script src="js/preload-images.js"></script>
+    <section class="header">
+        <div class="top-img"></div>
+        <div class="container nav">
+            <div class="nav-container logo-container">
+                <span>
+                    <img src="media/logotype.png" alt="Website Logo">
+                </span>
+                <h1 class="logo-text">PIXELMON TO GO</h1>
+            </div>
+            <div class="nav-container nav-element-container">
+                <a href='#' class="nav-element">Home</a>
+                <a href='#' class="nav-element">Store</a>
+                <a href='#' class="nav-element">Premium</a>
+                <a href='#howtoplay' class="nav-element">How to play</a>
+                <a href='https://twitter.com/PixelmonToGo' target='_blank' class="nav-element">
+                    Twitter
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 112.197 112.197" style="enable-background:new 0 0 112.197 112.197;" xml:space="preserve"><g>
+	<circle style="fill:#55ACEE;" cx="56.099" cy="56.098" r="56.098"/>
+	<g>
+		<path style="fill:#F1F2F2;" d="M90.461,40.316c-2.404,1.066-4.99,1.787-7.702,2.109c2.769-1.659,4.894-4.284,5.897-7.417
+			c-2.591,1.537-5.462,2.652-8.515,3.253c-2.446-2.605-5.931-4.233-9.79-4.233c-7.404,0-13.409,6.005-13.409,13.409
+			c0,1.051,0.119,2.074,0.349,3.056c-11.144-0.559-21.025-5.897-27.639-14.012c-1.154,1.98-1.816,4.285-1.816,6.742
+			c0,4.651,2.369,8.757,5.965,11.161c-2.197-0.069-4.266-0.672-6.073-1.679c-0.001,0.057-0.001,0.114-0.001,0.17
+			c0,6.497,4.624,11.916,10.757,13.147c-1.124,0.308-2.311,0.471-3.532,0.471c-0.866,0-1.705-0.083-2.523-0.239
+			c1.706,5.326,6.657,9.203,12.526,9.312c-4.59,3.597-10.371,5.74-16.655,5.74c-1.08,0-2.15-0.063-3.197-0.188
+			c5.931,3.806,12.981,6.025,20.553,6.025c24.664,0,38.152-20.432,38.152-38.153c0-0.581-0.013-1.16-0.039-1.734
+			C86.391,45.366,88.664,43.005,90.461,40.316L90.461,40.316z"/>
+	</g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                </a>
+                <a href='https://discord.gg/2TdCupu' target='_blank' class="nav-element">
+                    Discord
+                
+                    <img src="https://cdn.discordapp.com/attachments/566946875484405761/891676477995749406/w33830086032.png" alt="discord-icon">
+                     
+                </a>
+                <a href='https://www.youtube.com/channel/UCBj4JgPwTWnmNW6S7ffytQQ?view_as=subscriber' target='_blank' class="nav-element">
+                    Youtube
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                    <path style="fill:#D7143A;" d="M492.044,106.769c-18.482-21.97-52.604-30.931-117.77-30.931H137.721
+                        c-66.657,0-101.358,9.54-119.77,32.93C0,131.572,0,165.174,0,211.681v88.64c0,90.097,21.299,135.842,137.721,135.842h236.554
+                        c56.512,0,87.826-7.908,108.085-27.296C503.136,388.985,512,356.522,512,300.321v-88.64
+                        C512,162.636,510.611,128.836,492.044,106.769z M328.706,268.238l-107.418,56.14c-2.401,1.255-5.028,1.878-7.65,1.878
+                        c-2.97,0-5.933-0.799-8.557-2.388c-4.942-2.994-7.959-8.351-7.959-14.128V197.82c0-5.767,3.009-11.119,7.941-14.115
+                        c4.933-2.996,11.069-3.201,16.187-0.542l107.418,55.778c5.465,2.837,8.897,8.479,8.905,14.635
+                        C337.58,259.738,334.163,265.388,328.706,268.238z"/><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                </a>
+            </div>
+        </div>
+        <div class="bottom-img"></div>
+    </section>
+    <section class="main">
+        <div class="discord-widget-element widget-mob">
+            <iframe src="https://discord.com/widget?id=711630168552112348&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+        </div>
+        <div class="carousel">
+            <div class="carousel-main">
+                <h2 class="main-text">LAUNCHER</h2>
+                
+                <div class="carousel-desc id-1">
+                        <span>
+                            Easy<br>
+                            <b>Install</b>
+                        </span>
+                        <span>
+                            <b>MULTIPLAYER</b>
+                            <br>
+                            OPEN WORLD
+                        </span>
+                        <span>
+                            NEW UPDATES
+                            <br> <b>GEN 8.3</b>
+                        </span>
                 </div>
 
+                <div class="carousel-desc hide-element id-2">
+                    <p style="font-size: 132px;top:32px;">TOURNAMENTS</p>
+            </div>
+            
+            <div class="carousel-desc hide-element id-3">
+                <p style="font-size: 118px;top:32px;">BUGS OR ISSUES</p>
+
+            </div>
+
+            <div class="carousel-desc hide-element id-4">
+                <p style="font-size: 118px; top:32px;">IN-GAME STORE</p>
+            </div>
+               
+                <span class="carousel-buttons-container">
+                    <button data-id="1" class="carousel-button-active carousel-button"></button>
+                    <button data-id="2" class="carousel-button"></button>
+                    <button data-id="3" class="carousel-button"></button>
+                    <button data-id="4" class="carousel-button"></button>
+                </span>
+                <div class="carousel-footer id-1">
+                    <a href="#"
+                    >
+                    <img src="media/download-ico.png" loading="lazy" alt="Download Box">
+                    <b class="carousel-footer-content">Download Pixelmon (WINDOWS)</b>
+                </a>
+            </div>
+          
+                <div class="carousel-footer hide-element id-2">
+                    <a href="#" style="background-color: #1B1B1B;">
+                        <img src="media/but-icon-head-2.png" alt="How to player Image">
+                        <b class="carousel-footer-content">HOW TO PLAY</b>
+                    </a>
+                    <a href="#" class="danger">
+                        <b class="carousel-footer-content">EVENTS</b>
+                    </a>
+            </div>
+
+            <div class="carousel-footer hide-element id-3">
+                <a href="#" style="background-color: #1B1B1B;">
+                    <img src="media/but-icon-head-3.png" alt="Wiki Image">
+                    <b class="carousel-footer-content">VISIT THE WIKI</b>
+                </a>
+                <a href="#" class="danger">
+                    <b class="carousel-footer-content">REPORT A BUG</b>
+                </a>
+        </div>
+
+        <div class="carousel-footer hide-element id-4">
+            <a href="#" style="background-color: #1B1B1B;">
+                <img src="media/but-icon-head-4.png" alt="Store">
+                <b class="carousel-footer-content">VISIT OUR STORE</b>
+            </a>
+            <a href="#" class="danger">
+                <b class="carousel-footer-content">TERMS OF SERVICES</b>
+            </a>
+    </div>
+
+                </div>
+            </div>    
+        </div>
+        <div class="bottom-img">
+        </div>
+    </section>
+
+    
 
 
+    <section class="videos-container color-1 text-1" id="howtoplay">
 
+        <div class="container reveal">
+            <a class="box-1" href="https://www.youtube.com/watch?v=92lLf1NiH4k" target="_blank">
+                <img src="media/Youtube_vid.png" alt="Play PixelmonGo" class="yt-vid-img">
+            </a>
+            <div class="box-2">
+                <div class="section-title">How to Install<br> <p>the Pixelmon mod?</p></div>
+                <div class="section-description">
+                    The most simple way to install the Minecraft Pixelmon mod is by downloading our official launcher watch the YouTube video on our website to get a better understanding of all the steps. You need to login with Mojang or a Microsoft account. <br><br>When downloading the launcher you won't see a screen defender message because we are licenced and verified by Microsoft & Apple. Your login data will go automatically to Minecraft trough their API.
+                </div>
+            </div>
+        </div>
+    </section>
+    <?xml version="1.0" standalone="yes"?>
+<svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 270" style="position: relative;top: 24px;">
+<path style="fill:#1b1b1b; stroke:none;" d="M0 269L1942 269C1942 216.099 1949.79 158.067 1931.32 108C1926.69 95.4632 1917.82 64.1279 1902 62.1343C1885.86 60.1009 1879.06 87.432 1874.61 99C1864.47 125.393 1857.58 153.099 1846.14 179C1838.29 196.757 1830.25 209.748 1809 207.772C1795.24 206.492 1782.95 186.823 1775.2 177C1758.1 155.333 1745.23 130.662 1733.08 106C1726.26 92.152 1719.29 73.2762 1706.83 63.4344C1697.21 55.8459 1688.14 60.8002 1682.24 70C1671.06 87.4163 1664.77 107.768 1655.06 126C1652.15 131.456 1645.56 143.677 1638 142.853C1629.98 141.979 1624.87 129.057 1621.63 123C1611.62 104.305 1606.07 83.3588 1595.39 65C1590.15 56.0043 1583.39 48.1579 1572 50.2284C1554.73 53.3677 1544.19 83.4154 1537.22 97C1512.84 144.488 1491.64 230.092 1422 217.535C1405.62 214.583 1395.82 202.694 1388 189C1373.39 163.429 1365.02 133.456 1354.58 106C1349.93 93.7934 1340.85 63.9388 1324 65.419C1312.6 66.4203 1305.14 79.5301 1299.51 88C1287.69 105.756 1279.08 125.392 1266.86 142.91C1261.82 150.131 1254.19 159.815 1245 161.591C1238.07 162.93 1231.84 156.034 1228.21 150.996C1217.89 136.699 1211.55 119.865 1202.04 105.039C1197.96 98.6851 1190.03 86.6876 1181 91.1798C1174.21 94.5589 1170.25 103.485 1167.17 110C1160.15 124.832 1154.43 140.241 1147.26 155C1144.21 161.28 1138.61 176.162 1130 176.162C1122.52 176.162 1117.85 164.388 1114.86 159C1106.82 144.498 1101.6 128.581 1093.69 114C1090.71 108.511 1086.71 100.769 1080 99.4097C1073.05 98.004 1068.14 103.864 1064.72 109C1056.86 120.815 1051.75 134.29 1043.78 146C1040.54 150.773 1033.96 161.495 1026.87 158.066C1021.04 155.246 1017.36 147.502 1014.59 142C1007.94 128.801 1002.47 115.008 995.459 102C992.098 95.7668 986.675 84.2359 978.004 85.2724C970.333 86.1892 966.157 97.0136 963.258 103C954.111 121.896 948.334 142.563 940.397 162C937.917 168.072 932.118 184.133 923.996 184.133C915.044 184.133 908.197 167.614 904.978 161C897.478 145.586 891.421 129.525 884.164 114C880.326 105.79 875.401 95.655 866.996 91.2886C855.486 85.3089 843.523 92.6854 835.286 100.576C821.99 113.311 801.036 143.037 780 139.786C758.591 136.478 744.106 103.871 729.996 90.0154C712.651 72.9831 690.719 82.9561 671 72.8758C655.148 64.7722 640.229 39.4722 620 42.3403C596.154 45.7213 580.79 75.6038 561 87.4522C541.518 99.116 518.122 93.2695 497 98.2361C480.578 102.098 469.004 111.965 458.975 125.17C440.122 149.992 426.753 179.2 411.011 206C404.06 217.833 395.572 234.585 382 239.992C373.36 243.433 365.901 235.169 361.45 228.714C349.488 211.367 343.19 190.678 331.819 173C327.365 166.077 319.87 154.161 310.001 158.006C301.363 161.371 295.789 172.248 291.745 180C282.501 197.723 275.161 216.492 265.522 234C261.352 241.574 253.326 256.401 244 257.852C221.787 261.307 214.79 241.653 207.603 224C196.14 195.841 188.688 166.221 177.4 138C173.425 128.063 169.189 112.705 158.96 107.314C145.388 100.161 133.72 119.287 128.594 129C114.99 154.779 104.426 182.072 91.0802 208C87.7109 214.546 79.25 231.138 70 229.623C61.0361 228.156 55.8277 214.235 52.8102 207C42.8363 183.085 36.0939 157.938 26.189 134C22.926 126.114 15.7491 104.176 4.05864 107.438C-0.403543 108.683 0.00772997 113.245 0 117L0 146L0 269z"/>
+</svg>
 
+    
 
-
+    <section class="videos-container color-2" >
+        <div class="container reveal">
+            <div class="box-2">
+                <div class="section-title" style="font-size: 162px;">What is the <p style="font-size: 115px;">Pixelmon mod?</p></div>
+                <div class="section-description">
+                    pixelmon is a open world multiplayer Pokémon game combined with the features of Minecraft. You can build your house and also catch all 800+ Pokémon's. In this Minecraft mod you can play super competitive because all moves + mega forms are in it.<br><br> With the pixelmon mod you can create your own goals if that is to build a beautiful home or to capture all the Pokémon's the choose is really yours.
+                </div>
+            </div>
+            <div class="box-1">
+                <img src="media/Whatispixelmon1.png" alt="What is Pixelmon Image">
+            </div>
+            
+        </div>
+      
+    </section>
+    <?xml version="1.0" standalone="yes"?>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 270">
+    <path style="fill:#1b1b1b; stroke:none;" d="M0 0L0 330L1 330C13.8844 294.28 30.5835 255.92 52.7708 224.985C70.9611 199.623 93.9314 180.372 109.858 153C119.235 136.884 127.06 118.251 140.04 104.6C144.241 100.183 151.277 93.1194 158 93.767C175.281 95.4316 186.364 122.73 192.371 136C210.134 175.24 218.62 218.051 234.6 258C239.878 271.194 247.747 293.957 264 296.645C274.873 298.443 287.211 287.764 297 284.246C307.693 280.404 319.852 282.919 330 277.598C351.132 266.518 358.433 235.434 366.6 215C372.076 201.299 376.739 186.77 384.229 174C386.806 169.607 390.66 162.576 396.004 161.163C403.676 159.134 410.347 172.772 413.163 178C421.467 193.416 427.628 209.859 436.424 225C440.563 232.124 445.54 239.945 455 237.686C461.807 236.061 466.572 228.364 470.282 222.999C479.788 209.258 490.143 180.15 509 177.422C519.122 175.958 529.316 185.696 537 190.833C550.438 199.816 565.433 206.185 582 202.61C617.18 195.018 634.053 148.788 672 148.054C687.587 147.752 700.627 158.278 713 166.329C719.736 170.712 729.748 176.394 738 173.751C757.386 167.54 766.493 139.836 776.262 124C780.24 117.55 787.441 105.765 796 105.206C803.976 104.685 810.663 115.25 814.369 121C822.424 133.499 828.963 147.212 838.127 158.961C841.784 163.649 846.765 169.913 853 170.853C881.589 175.162 899.027 131.672 912.908 113.039C918.984 104.883 930.374 89.3803 941.985 95.2785C951.145 99.9323 956.511 112.138 960.625 121C969.844 140.859 977.451 161.409 987.247 181C994.364 195.234 1003.15 209.111 1021 207.91C1031.76 207.187 1040.07 201.177 1049 195.746C1071.11 182.299 1087.98 166.211 1101.45 144C1108.5 132.356 1121 102.225 1137 101.206C1144.9 100.703 1150.52 111.166 1153.69 117C1163.35 134.78 1169.57 154.181 1179.08 172C1183 179.323 1190.23 194.403 1200.83 189.602C1209.23 185.795 1214.18 173.751 1218 166C1228.92 143.843 1236.14 120.073 1247.25 98C1251.78 88.9901 1261.5 69.5552 1274 70.6281C1288.25 71.8515 1295.93 95.0334 1300.19 106C1310.15 131.627 1317.07 158.306 1326.81 184C1330.77 194.45 1334.37 208.155 1343.04 215.775C1358.3 229.181 1374.19 198.788 1382.77 189.808C1386.78 185.601 1391.69 180.786 1397.99 183.239C1410.16 187.981 1417.15 205.079 1426.04 213.961C1430.75 218.671 1436.85 222.941 1443.82 220.298C1449.07 218.304 1452.55 211.658 1454.99 207C1461.52 194.509 1465.85 181.248 1470.54 168C1482.21 135.013 1491.14 100.35 1507 69C1514.33 54.5265 1524.01 38.351 1539 30.7531C1556.8 21.7299 1574.91 32.4572 1592 37.3634C1613.47 43.5255 1634.4 43.4269 1652.71 58.2979C1669.96 72.3018 1683.62 89.807 1698.44 106.2C1706.55 115.166 1715.74 125.842 1727 130.864C1739.22 136.311 1751.02 129.505 1759.27 120.83C1775.41 103.853 1785.59 82.571 1799.63 64.0038C1805.01 56.8759 1816.25 40.5204 1827 43.3989C1842.06 47.4319 1849.11 72.1758 1853.69 85C1863.49 112.443 1870.83 140.764 1881.19 168C1885.63 179.672 1889.56 194.003 1899.19 202.596C1913.67 215.526 1940.5 196.863 1941.94 180C1943.62 160.309 1942 139.769 1942 120L1942 0L0 0z"/>
+    </svg>
+    
+    <section class="videos-container color-3 text-1">
+        <div class="container reveal">
+            <div class="box-1">
+                <img src="media/Whatserver.png" style="transform: scale(1.3);" alt="What is Pixelmon Image">
+            </div>
+            <div class="box-2">
+                <div class="section-title">Pixelmon Servers</div>
+                <div class="section-description">
+                    Looking for the most fun and child friendly experience join our official servers! when installing our game you can immediately play within 5 minutes.<br><br> Our servers are 100% lag proof and have features such as Custom landscape, Pokémon Radio, Voice chat, Marvel/Anime costumes and al Pokémon features like gyms, Elite fours, Battle Towers, Day care and even competitive showdown.
+                </div>
+            </div>
+        </div>
+      
+    </section>
+    <?xml version="1.0" standalone="yes"?>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 190" style="position: relative;top: 24px;">
+        <path style="fill:#677bc1; stroke:none;" d="M0 44L0 183L1922 183C1922 168.917 1911.9 165.603 1901 158.333C1881.38 145.257 1862.02 131.633 1842 119.192C1756.94 66.3483 1659.23 10.9801 1555 23.2855C1453.31 35.2907 1360.73 81.9537 1260 97.5756C1154.29 113.971 1046.54 100.664 941 118.247C843.154 134.548 748.232 168.441 648 165.985C605.562 164.946 562.203 153.189 522 140.344C458.266 119.98 396.378 93.7822 332 75.4275C223.606 44.5237 111.699 44 0 44z"/>
+        </svg>
+    <section class="videos-container color-4" >
+        <div class="container reveal">
+            <div class="box-1">
+                <iframe src="https://discord.com/widget?id=711630168552112348&theme=dark" width="450" height="600" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+            </div>
+            <div class="box-2">
+                <div class="section-title">Our Pixelmon Discord!  <img style="position: absolute;top: 100px;right: 275px;" src="https://cdn.discordapp.com/attachments/566946875484405761/891676477995749406/w33830086032.png" alt="discord-icon"></div>
+                <div class="section-description">
+                    Everyone is welcome in our official Discord. Be a part of the friendly community or want to be up to date with our announcements join the discord!
+                </div>
+            </div>
+        </div>
+      
+    </section>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+    <script src="js/main.js" defer></script>
 </body>
-
 </html>
