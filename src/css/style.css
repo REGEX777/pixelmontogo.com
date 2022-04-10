@@ -49,7 +49,9 @@ html,body
   position: relative;
   top:15px;
 }
-
+svg{
+  overflow: visible;
+}
 .nav-element{
   position: relative;
   padding: 5px 10px;
@@ -76,14 +78,14 @@ html,body
 
 /* Background Effects */
 .header .top-img{
-  background-image: url("media/head-top-light");
+  background-image: url("../media/head-top-light");
 }
 .header .bottom-img{
   position: absolute;
   bottom: -133px;
   z-index: 120;
   left: 0;
-  background: url(media/bottom-sep-white.svg) no-repeat;
+  background: url("../media/bottom-sep-white.svg") no-repeat;
   background-size: 100% 100%;
   height: 238px;
   width: 100%;
@@ -117,7 +119,7 @@ html,body
 /* Main Container */
 .main{
   box-shadow: inset 0px 12em 6.5em 0em rgb(255 255 255);
-  background: url(media/backs.jpg) no-repeat;
+  background: url("../media/backs.jpg") no-repeat;
   background-size: cover;
   z-index: 1000;
   min-height: 900px;
@@ -197,7 +199,6 @@ html,body
   background: #e83e8c;
   color: white;
   text-decoration: none;
-  transition: 0.8s;
   top: 14.3em;
   left: 1em;
   font-size: 1.75rem;
@@ -234,7 +235,7 @@ html,body
 
 /* Image Effects */
 .main .bottom-img{
-  background-image: url("media/bottom-sep2-white.svg");
+  background-image: url("../media/bottom-sep2-white.svg");
   position: absolute;
   bottom: -11px;
   width: 100%;
@@ -247,7 +248,7 @@ html,body
 /* Servers Section */
 .servers{
   min-height: 1100px;
-  background: white url(media/bg-servers.png) no-repeat bottom;
+  background: white url("../media/bg-servers.png") no-repeat bottom;
   background-size: 100% 100%;
   width: 100%;
   z-index: 200;
@@ -318,11 +319,11 @@ html,body
 
 #server-1{
   background-color: #464646;
-  background-image: url(media/bg-server-1.jpg);
+  background-image: url("../media/bg-server-1.jpg");
 }
 #server-2{
   background-color: white;
-  background-image: url(media/bg-server-2.jpg);
+  background-image: url("../media/bg-server-2.jpg");
 }
 
 
@@ -340,12 +341,16 @@ html,body
 
 /* Bottom Effect */
 .servers .bottom-img{
-  background-image: url(media/pattern-1.png);
+  background-image: url("../media/pattern-1.png");
   position: absolute;
   left: 0;
   width: 100%;
   height: 74px;
   bottom: -5px;
+}
+
+.text-1 *{
+  color: #1B1B1B !important;
 }
 
 /* Video Container */
@@ -423,7 +428,7 @@ html,body
 }
 
 .videos-container .bottom-img {
-  background-image: url(media/pattern-2.png);
+  background-image: url("../media/pattern-2.png");
   position: absolute;
   bottom: -71px;
   width: 100%;
@@ -442,6 +447,7 @@ html,body
   height: 139px !important;
   width: 40%;
 }
+
 
 /* Media Query (Mobile Pov)*/
 @media (max-width: 1262px){
@@ -574,10 +580,6 @@ html,body
 
 
 /* Container Colors */
-.text-1 *{
-  color: #1B1B1B !important;
-
-}
 
 .color-2{
   background-color: #1B1B1B ;
@@ -587,6 +589,5 @@ html,body
 }
 
 
-svg{
-  overflow: visible;
-}
+
+
