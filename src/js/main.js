@@ -1,6 +1,4 @@
 var button = document.querySelectorAll(".carousel-button");
-var footers = document.querySelectorAll(".carousel-footer");
-var descriptions = document.querySelectorAll(".carousel-desc");
 
 var id1 = document.querySelectorAll(".id-1");
 var id2 = document.querySelectorAll(".id-2");
@@ -34,7 +32,6 @@ function fadeInEffect(target) {
             if (!e.style.opacity) {
                 e.style.opacity = 1;
             }
-            console.log(e.style.opacity < 1)
             if (e.style.opacity < 1) {
                 e.style.opacity += 0.1;
             } else {
@@ -46,8 +43,8 @@ function fadeInEffect(target) {
     })
 }
 
-    for (i = 0; i < button.length; i++) {
-        button[i].addEventListener('click', function() {
+    button.forEach(btn => {
+        btn.addEventListener('click', function() {
             if(!this.classList.contains("carousel-button-active")){
 
                 button.forEach(e => {
@@ -59,22 +56,17 @@ function fadeInEffect(target) {
                     fadeOutEffect(".carousel-desc")
 
                     if(this.dataset.id == 1){
-                     
                         fadeInEffect(".id-1")
                         fadeInEffect(".main-text")
-        
                     } else if (this.dataset.id == 2){ 
-                    
                         fadeInEffect(".id-2")
                         fadeOutEffect(".main-text")
                     }else if (this.dataset.id == 3){ 
-                   
                         fadeInEffect(".id-3")
-
                         fadeOutEffect(".main-text")
                         
                     }else if (this.dataset.id == 4){ 
-                     
+                    
                         fadeInEffect(".id-4")
                         fadeOutEffect(".main-text")
                     }
@@ -83,7 +75,7 @@ function fadeInEffect(target) {
             }
         });
 
-    }        
+    })   
 
 
     function reveal() {
