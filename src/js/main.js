@@ -1,35 +1,89 @@
-$(document).ready(function(){
+var button = document.querySelectorAll(".carousel-button");
+var footers = document.querySelectorAll(".carousel-footer");
+var descriptions = document.querySelectorAll(".carousel-desc");
 
-    $(".carousel-button").click(function(){
-        if(!$(this).hasClass("carousel-button-active")){
-            $(".carousel-button").removeClass("carousel-button-active")
-            $(this).addClass("carousel-button-active")
+var id1 = document.querySelectorAll(".id-1");
+var id2 = document.querySelectorAll(".id-2");
+var id3 = document.querySelectorAll(".id-3");
+var id4 = document.querySelectorAll(".id-4");
 
-            $(".carousel-footer").hide(250)
-            $(".carousel-desc").hide(250)
-
-            if($(this).data("id") == 1){
-                $(".id-1").show(250)
-                $(".main-text").show(250)
-
-            } else if ($(this).data("id") == 2){ 
-                $(".id-2").show(250)
-                $(".main-text").hide(250)
-                $(".carousel-footer.id-2").css({display: "flex"})
-
-            }else if ($(this).data("id") == 3){ 
-                $(".id-3").show(250)
-            $(".main-text").hide(250)
-            $(".carousel-footer.id-3").css({display: "flex"})
-                
-            }else if ($(this).data("id") == 4){ 
-                $(".id-4").show(250)
-                $(".main-text").hide(250)
-                $(".carousel-footer.id-4").css({display: "flex"})
+function fadeOutEffect(target) {
+    var fadeTarget = document.querySelectorAll(target);
+    fadeTarget.forEach(e => {
+        var fadeEffect = setInterval(function () {
+            if (!e.style.opacity) {
+                e.style.opacity = 1;
             }
-
-        }
+            if (e.style.opacity > 0) {
+                e.style.opacity -= 0.1;
+            } else {
+                clearInterval(fadeEffect);
+                e.classList.add("hide-element")
+                setTimeout(() => {
+                    e.style.opacity = 1 
+                }, 10);
+            }
+        }, 50);
     })
+}
+function fadeInEffect(target) {
+    var fadeTarget = document.querySelectorAll(target);
+    fadeTarget.forEach(e => {
+
+        var fadeEffect2 = setInterval(function () {
+            if (!e.style.opacity) {
+                e.style.opacity = 1;
+            }
+            console.log(e.style.opacity < 1)
+            if (e.style.opacity < 1) {
+                e.style.opacity += 0.1;
+            } else {
+                clearInterval(fadeEffect2);
+            e.classList.remove("hide-element")
+
+            }
+        }, 100);
+    })
+}
+
+    for (i = 0; i < button.length; i++) {
+        button[i].addEventListener('click', function() {
+            if(!this.classList.contains("carousel-button-active")){
+
+                button.forEach(e => {
+                    e.classList.remove("carousel-button-active")
+                })
+                this.classList.add("carousel-button-active")
+    
+                    fadeOutEffect(".carousel-footer")
+                    fadeOutEffect(".carousel-desc")
+
+                    if(this.dataset.id == 1){
+                     
+                        fadeInEffect(".id-1")
+                        fadeInEffect(".main-text")
+        
+                    } else if (this.dataset.id == 2){ 
+                    
+                        fadeInEffect(".id-2")
+                        fadeOutEffect(".main-text")
+                    }else if (this.dataset.id == 3){ 
+                   
+                        fadeInEffect(".id-3")
+
+                        fadeOutEffect(".main-text")
+                        
+                    }else if (this.dataset.id == 4){ 
+                     
+                        fadeInEffect(".id-4")
+                        fadeOutEffect(".main-text")
+                    }
+               
+    
+            }
+        });
+
+    }        
 
 
     function reveal() {
@@ -47,10 +101,6 @@ $(document).ready(function(){
           }
         }
     }
-    
-    $("body").scroll(function(){
+    document.querySelector("body").addEventListener('scroll', function(e) {
         reveal()
     })
-
-      
-})
