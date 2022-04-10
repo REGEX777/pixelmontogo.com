@@ -1,10 +1,5 @@
 var button = document.querySelectorAll(".carousel-button");
 
-var id1 = document.querySelectorAll(".id-1");
-var id2 = document.querySelectorAll(".id-2");
-var id3 = document.querySelectorAll(".id-3");
-var id4 = document.querySelectorAll(".id-4");
-
 function fadeOutEffect(target) {
     var fadeTarget = document.querySelectorAll(target);
     fadeTarget.forEach(e => {
@@ -54,18 +49,17 @@ function fadeInEffect(target) {
     
                     fadeOutEffect(".carousel-footer")
                     fadeOutEffect(".carousel-desc")
-
-                    if(this.dataset.id == 1){
+                    if(parseInt(this.dataset.id) === 1){
                         fadeInEffect(".id-1")
                         fadeInEffect(".main-text")
-                    } else if (this.dataset.id == 2){ 
+                    } else if (parseInt(this.dataset.id) === 2){ 
                         fadeInEffect(".id-2")
                         fadeOutEffect(".main-text")
-                    }else if (this.dataset.id == 3){ 
+                    }else if (parseInt(this.dataset.id) === 3){ 
                         fadeInEffect(".id-3")
                         fadeOutEffect(".main-text")
                         
-                    }else if (this.dataset.id == 4){ 
+                    }else if (parseInt(this.dataset.id) === 4){ 
                     
                         fadeInEffect(".id-4")
                         fadeOutEffect(".main-text")
