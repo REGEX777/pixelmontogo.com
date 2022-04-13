@@ -450,7 +450,7 @@ svg{
 
 
 /* Media Query (Mobile Pov)*/
-@media (max-width: 1262px){
+@media (max-width: 1462px){
   .servers-container{
     flex-direction: column;
   }
@@ -587,7 +587,3 @@ svg{
 .color-4{
   background-color: #677BC1 ;
 }
-
-
-
-
