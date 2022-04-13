@@ -90,3 +90,19 @@ function fadeInEffect(target) {
     document.querySelector("body").addEventListener('scroll', function(e) {
         reveal()
     })
+
+    const downloadLink = document.getElementById('download-pixelmon');
+    const platform = document.getElementById('platform');
+    if (navigator.userAgent.indexOf('Mac OS X') !== -1) {
+        downloadLink.href = "https://cdn.pixelmontogo.com/launcher/PixelmonToGoLauncher-mac.dmg";
+        platform.textContent = "DOWNLOAD PIXELMON (MAC)";
+    } else if (navigator.userAgent.indexOf('Linux') !== -1) {
+        downloadLink.href = "https://cdn.pixelmontogo.com/launcher/Pixelmon%20To%20Go%20Launcher.AppImage";
+        platform.textContent = "DOWNLOAD PIXELMON (LINUX)";
+    } else {
+        downloadLink.href = "https://cdn.pixelmontogo.com/launcher/Pixelmon%20To%20Go%20Launcher%20Setup.exe";
+        platform.textContent = "DOWNLOAD PIXELMON (WINDOWS)";
+    }
+ 
+
+
