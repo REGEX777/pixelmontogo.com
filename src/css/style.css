@@ -356,7 +356,7 @@ svg{
 /* Video Container */
 .videos-container{
   width: 100%;
-  padding: 20px 50px !important;
+  padding: 20px 50px;
   position: relative;
 }
 
@@ -402,6 +402,8 @@ svg{
 }
 .yt-vid-img {
   transform: scale(1,1) !important; 
+  width: 700px;
+  height: 500px !important;
 }
 
 .section-title{
@@ -478,7 +480,7 @@ svg{
 }
 
 /* Media Query (Mobile Pov)*/
-@media (max-width: 1262px){
+@media (max-width: 1362px){
   .servers-container{
     flex-direction: column;
   }
@@ -496,6 +498,9 @@ svg{
 
 
   /* Video Container (Mobile Pov) */
+  .videos-container{
+    padding: 20px !important;
+  }
   .videos-container .container {
     flex-direction: column;
   }
