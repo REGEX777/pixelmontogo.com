@@ -100,6 +100,6 @@ function fadeInEffect(target) {
         downloadLink.href = "https://cdn.pixelmontogo.com/launcher/Pixelmon%20To%20Go%20Launcher.AppImage";
         platform.textContent = "DOWNLOAD PIXELMON (LINUX)";
     } else {
-        downloadLink.href = "https://cdn.pixelmontogo.com/launcher/Pixelmon%20To%20Go%20Launcher%20Setup.exe";
+        downloadLink.href = "https://PixelmonToGo.b-cdn.net/launcher/Pixelmon%20To%20Go%20Launcher%20Setup.exe";
         platform.textContent = "DOWNLOAD PIXELMON (WINDOWS)";
     }
