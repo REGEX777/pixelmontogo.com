@@ -562,12 +562,11 @@ svg{
 }
 
 @media (max-width: 500px){
-  .section-title{
-    height: 55px !important;
-    width: 55px !important;
+
+  .seciton-title image{
+    height: 20px;
+    width: 20px;
   }
-
-
   .container{
     max-width: 95%;
     width: 95%;
@@ -615,7 +614,7 @@ svg{
     height: auto;
   }
   .section-title{
-    font-size: 70px !important;
+    font-size: 50px !important;
     word-break: break-word;
   }
   .seciton-title p {
